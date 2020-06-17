@@ -1,0 +1,83 @@
+body::after {
+    content: "";
+    position: fixed;
+    background: #FFFFFF;
+    top: 260px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+main {
+    margin: 48px;
+}
+#page-search-results {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#page-search-results header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+#page-search-results header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#page-search-results header a span {
+    background-image: url('/assets/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+    display: flex;
+    margin-right: 16px;
+}
+#page-search-results main {
+    margin-top: 48px;
+}
+#page-search-results main h4 {
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+    margin: 32px 0 24px;
+}
+#page-search-results main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+#page-search-results main img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+#page-search-results main .card h2 {
+    font-size: 36px;
+    line-height: 41px;
+    margin-top: 32px;
+    color: #322153;
+}
+#page-search-results main .card h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--primary-color);
+    margin-top: 24px;
+}
+#page-search-results main .card p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C80;
+}
+
+
+
+
+
+
+
+

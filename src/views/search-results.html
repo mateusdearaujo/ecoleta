@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block title %}
     <title>Ecoleta - Resultado da Pesquisa</title>
-    <meta name="description" content="Cadastre um novo ponto de coleta"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
+{% endblock title %}
+
+{% block description %}
+    <meta name="description" content="Confira o resultado de sua pesquisa."/>
+{% endblock description %}
+
+{% block styles %}
     <link rel="stylesheet" href="/styles/search-results.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
-</head>
-<body>
-<div id="page-search-results">
-    <header>
-        <img src="/assets/logo.svg" alt="Logo Ecoleta" title="Logo Ecoleta"/>
-        <a href="/">
-            <span></span>
-            Voltar para home
-        </a>
-    </header>
+{% endblock styles %}
+
+{% block content %} 
+    {% include "partials/page-header.html" %}
     <main>
         <h4>
             <strong>2 pontos</strong> encontrados
@@ -47,6 +43,4 @@
             </div>
         </div>
     </main>
-</div>
-</body>
-</html>
+{% endblock content %}

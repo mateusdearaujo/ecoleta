@@ -38,6 +38,14 @@
 }
 #page-create-point form legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#page-create-point form legend span {
+    color: var(--title-color);
+    font-size: 14px;
 }
 #page-create-point form h2 {
     font-size: 24px;

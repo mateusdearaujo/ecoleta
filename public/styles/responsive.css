@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 900px) {
     #page-home {
         background-position: 70vw;
@@ -20,6 +26,12 @@
     }
     #page-search-results main img {
         height: 250px;
+    }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    #page-create-point form .field-group .field + .field {
+        margin-left: 0;
     }
 }
 

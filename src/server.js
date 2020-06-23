@@ -1,6 +1,9 @@
 const express = require("express");
 const server = express();
 
+// pegar o banco de dados
+const db = require("./database/db");
+
 server.use(express.static("public"));
 
 // template engine
@@ -21,7 +24,16 @@ server.get("/create-point", (req, res) => {
 });
 
 server.get("/search", (req, res) => {
-    return res.render("search-results.html");
+    // pegar os dados no db
+    db.all(`SELECT * FROM places`, function(err, rows){
+        if(err) {
+            return console.log(err);
+        }
+
+        const total = rows.length;
+
+        return res.render("search-results.html", { places: rows, total});
+    })
 });
 
 server.listen(3000);

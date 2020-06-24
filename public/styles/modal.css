@@ -65,28 +65,12 @@
     background-color: #2FB85E;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal.point .content h1 {
+    color: #FFFFFF;
+    margin-top: 32px;
+}
